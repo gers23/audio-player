@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon-audio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>audio-player</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="cover"></div>
+            <div class="timeline">
+                <div class="progress"></div>
+            </div>
+            <div class="audio-player">
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="length"></div>
+                </div>
+                <div class="title">
+                    <div class="song-artist">Artist</div>
+                    <div class="song-title">Title Song</div>
+                </div>
+                <div class="bottom-panel">
+                    <div class="buttons">
+                        <button class="play-prev"></button>
+                        <button class="play-btn"></button>
+                        <button class="play-next"></button>
+                    </div>
+                    <div class="volume-container">
+                        <div class="slider-container">
+                            <input type="range" name="volume" class="volume-slider" min="0" max="1" step="0.05" value="0.5">
+                        </div>
+                        <div class="volume-button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="year"> © 2022<a href="https://github.com/gers23" class="nav-link nav-item">gers23</a> </div>
+            <a href="https://rs.school/js-stage0/" target="_blank">
+                <img src="./assets/svg/rs_school_js.svg" alt="rss-icon" class="rss">
+            </a>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
